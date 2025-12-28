@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "anvil-rebalance",
+	"version": "${version}",
+	"name": "Anvil Rebalance",
+	"description": "Opinionated changes to the vanilla anvil.",
+	"authors": ["Bohush"],
+	"contact": {
+		"homepage": "https://github.com/JanBohunovsky/",
+		"issues": "https://github.com/JanBohunovsky/anvil-rebalance/issues",
+		"sources": "https://github.com/JanBohunovsky/anvil-rebalance"
+	},
+	"license": "MIT",
+	"icon": "assets/anvil-rebalance/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"dev.bohush.anvilRebalance.AnvilRebalanceClient"
+		],
+		"main": [
+			"dev.bohush.anvilRebalance.AnvilRebalance"
+		]
+	},
+	"mixins": [
+		"anvil-rebalance.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"fabric-api": "*",
+		"minecraft": "${minecraft_version}"
+	}
+}
