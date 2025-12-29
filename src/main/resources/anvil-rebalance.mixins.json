@@ -4,6 +4,7 @@
 	"package": "dev.bohush.anvilRebalance.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"AnvilMenuMixin"
 	],
 	"client": [
 	],

@@ -1,6 +1,6 @@
 package dev.bohush.anvilRebalance;
 
-import dev.bohush.anvilRebalance.registry.RepairMaterialsManager;
+import dev.bohush.anvilRebalance.util.UnitRepairManager;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
@@ -12,7 +12,7 @@ public class AnvilRebalance implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        RepairMaterialsManager.init();
+        UnitRepairManager.init();
     }
 
     public static Identifier createIdentifier(String id) {
